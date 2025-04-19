@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>«Білімді ұстаз ұстанымы» журналы</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: url('mukaba.jpg') center/cover no-repeat;
+      height: 250px;
+      position: relative;
+      color: white;
+    }
+    header .overlay {
+      background: rgba(0,0,0,0.4);
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+    }
+    header h1 {
+      margin: 0; font-size: 2.5em;
+    }
+    .language-switch {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+    .language-switch button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      background-color: #00778b;
+      color: white;
+      cursor: pointer;
+    }
+    .language-switch button:hover {
+      background-color: #005f6b;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #00778b;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .whatsapp-btn, .download-btn {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+    }
+    .download-btn {
+      background-color: #00778b;
+    }
+    .download-btn:hover {
+      background-color: #005f6b;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #00778b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="overlay">
+      <h1>«Білімді ұстаз ұстанымы»</h1>
+      <p class="lang kk">Ғылыми-әдістемелік журнал</p>
+      <p class="lang ru" style="display: none;">Научно-методический журнал</p>
+    </div>
+    <div class="language-switch">
+      <button onclick="setLanguage('kk')">Қазақша</button>
+      <button onclick="setLanguage('ru')">Русский</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="license" style="text-align:center; padding: 40px; background-color: #f4f8ff;">
+        <h2 
+          style="font-family: 'Arial'; color: #1a4d8f;">
+          <p2 class = "lang kk">Журнал лицензиясы</p2>
+          <p2 class = "lang ru">Лицензия журнала</p2>
+
+        </h2>
+        
+        <p 
+          style="font-size: 16px; color: #333;">
+          <p class="lang kk"> «Білімді ұстаз ұстанымы» журналы Қазақстан Республикасының заңнамасына сәйкес тіркелген. Лицензия фотосы төменде көрсетілген. </p>
+          <p class="lang ru"> Журнал «Позиция образованного учителя» зарегистрирован в соответствии с законодательством Республики Казахстан. Ниже представлена фотография лицензии. </p>
+        </p>
+      
+        <div style="margin-top: 10px; ">
+          <img 
+          src="KZ44VPY00110496_ru_page-0001.jpg" 
+          alt="Журнал лицензиясы" 
+          style="max-width: 100%; height: auto; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+        </div>
+
+      </section>
+
+    <section id="about">
+      <h2 class="lang kk">Журнал туралы</h2>
+      <h2 class="lang ru" style="display: none;">О журнале</h2>
+      <p class="lang kk"><strong>Мекенжайы:</strong> Шымкент қаласы</p>
+      <p class="lang ru" style="display: none;"><strong>Адрес:</strong> г. Шымкент</p>
+      <p class="lang kk"><strong>Жауапты тұлға</strong> Бедер Мұхаммеджан</p>
+      <p class="lang ru" style="display: none;"><strong>Ответственное лицо: </strong>Бедер Мұхаммеджан</p>
+      <p class="lang kk"><strong>Байланыс нөмірі:</strong> +7 707 060 5081</p>
+      <p class="lang ru" style="display: none;"><strong>Контакт:</strong> +7 707 060 5081</p>
+      <p><strong>Email:</strong> bilimdi_ustaz_ustanymy@mail.ru</p>
+      <p class="lang kk"><strong>Мақсаты:</strong> Қазақстан мұғалімдерінің педагогикалық тәжірибесін, инновациялық әдістерін насихаттау және ғылыми‑әдістемелік мақалаларды көпшілікке ұсыну.</p>
+      <p class="lang ru" style="display: none;"><strong>Цель:</strong> Популяризация педагогического опыта и инновационных методов казахстанских учителей.</p>
+    </section>
+
+    <section id="authors">
+      <h2 class="lang kk">Авторларға арналған талаптар</h2>
+      <h2 class="lang ru" style="display: none;">Требования к авторам</h2>
+      <ul class="lang kk">
+        <li>Мақала көлемі — 4 беттен аспауы тиіс;</li>
+        <li>Қаріп өлшемі — Times New Roman, 14 pt;</li>
+        <li>Мақала плагиат анықтамасымен бірге жіберілуі керек;</li>
+        <li>Авторлық құқық авторда қалады;</li>
+        <li>Редакция мәтінді өңдеуге құқылы;</li>
+        <li>Жариялау үшін төлем WhatsApp арқылы жүзеге асырылады.</li>
+      </ul>
+      <ul class="lang ru" style="display: none;">
+        <li>Объём статьи — не более 4 страниц;</li>
+        <li>Шрифт — Times New Roman, размер 14 pt;</li>
+        <li>К статье необходимо приложить справку о плагиате;</li>
+        <li>Авторское право сохраняется за автором;</li>
+        <li>Редакция имеет право редактировать текст;</li>
+        <li>Оплата публикации производится через WhatsApp.</li>
+      </ul>
+      <a class="whatsapp-btn" href="https://wa.clck.bar/77070605081" target="_blank">
+        WhatsApp
+      </a>
+    </section>
+
+    <section id="agreement">
+      <h2 class="lang kk">Автор мен редакция арасындағы келісімшарт</h2>
+      <h2 class="lang ru" style="display: none;">Соглашение между автором и редакцией</h2>
+      <p class="lang kk">Бұл келісімшарт Автор мен журнал редакциясы арасында жасалады. Автор мақала жіберу арқылы жариялауға келісім береді. Плагиат анықтамасы міндетті. Редакция мәтінді өңдей алады.</p>
+      <p class="lang ru" style="display: none;">Настоящее соглашение заключается между Автором и редакцией журнала. Отправляя статью, Автор соглашается на публикацию. Необходим документ об антиплагиате. Редакция может редактировать текст.</p>
+      <section id="agreement" style="text-align: center; padding: 40px; background-color: #eef9ff;">
+      
+        <a 
+          href="https://drive.google.com/file/d/1PblmuhbWbjBYOwiLv93hd7LSlpKyx2bD/view?usp=sharing" 
+          target="_blank">
+          <button 
+            data-lang-kk="Келісімшартты ашу" 
+            data-lang-ru="Открыть соглашение" 
+            style="padding: 10px 20px; background-color: #00778b; color: white; border: none; border-radius: 6px; cursor: pointer;">
+            Келісімшартты ашу / Открытие договора
+          </button>
+        </a>
+      </section>
+
+    <section id="editors">
+      <h2 class="lang kk">Редакторлар туралы</h2>
+      <h2 class="lang ru" style="display: none;">О редакции</h2>
+      <ul>
+        <li><strong class="lang kk">Бас редактор:</strong><strong class="lang ru" style="display:none;">Главный редактор:</strong> Ермекбай Әсем Әлімжанқызы</li>
+        <li><strong class="lang kk">Ғылыми редактор:</strong><strong class="lang ru" style="display:none;">Научный редактор:</strong> [Ғалым-редактордың аты-жөні]</li>
+        <li><strong class="lang kk">Редакциялық кеңес:</strong><strong class="lang ru" style="display:none;">Редакционный совет:</strong>
+          <ul>
+            <li>[Мүше 1 / Член 1]</li>
+            <li>[Мүше 2 / Член 2]</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2 class="lang kk">Жиі қойылатын сұрақтар</h2>
+      <h2 class="lang ru" style="display: none;">Часто задаваемые вопросы</h2>
+      <ul class="lang kk">
+        <li><strong>Мақаланы қалай жіберемін?</strong> Email немесе сайттағы форма арқылы.</li>
+        <li><strong>Плагиат анықтамасы керек пе?</strong> Иә, міндетті түрде.</li>
+        <li><strong>Төлем қалай жүргізіледі?</strong> WhatsApp арқылы реквизиттер жіберіледі.</li>
+        <li><strong>Авторлық құқық кімде қалады?</strong> Авторда.</li>
+        <li><strong>PDF форматында журнал қолжетімді ме?</strong> Иә, сайтта жүктеуге болады.</li>
+      </ul>
+      <ul class="lang ru" style="display: none;">
+        <li><strong>Как отправить статью?</strong> Через email или форму на сайте.</li>
+        <li><strong>Нужен ли антиплагиат?</strong> Да, обязательно.</li>
+        <li><strong>Как производится оплата?</strong> Реквизиты отправляются через WhatsApp.</li>
+        <li><strong>Кому принадлежат авторские права?</strong> Автору.</li>
+        <li><strong>Доступен ли журнал в PDF?</strong> Да, можно скачать на сайте.</li>
+      </ul>
+    </section>
+
+    <section id="download">
+      <h2 class="lang kk">Журналдың PDF нұсқасы</h2>
+      <h2 class="lang ru" style="display: none;">PDF-версия журнала</h2>
+      <a class="download-btn" href="journal.pdf" download>Жүктеу / Скачать</a>
+    </section>
+  </main>
+
+  <footer>
+    <p class = "lang kk"> ©️ 2025 «Білімді ұстаз ұстанымы» журналы. Барлық құқықтар қорғалған.</p>
+    <p class = "lang ru"> ©️ 2025 «Білімді ұстаз ұстанымы» журналы. Барлық құқықтар қорғалған.</p>
+
+  </footer>
+
+ 
+  <script>
+    function setLanguage(lang) {
+      // Скрыть все элементы с классом 'lang'
+      document.querySelectorAll('.lang').forEach(el => {
+        el.style.display = 'none';
+      });
+  
+      // Показать только те, что относятся к выбранному языку
+      document.querySelectorAll('.lang.' + lang).forEach(el => {
+        el.style.display = '';
+      });
+  
+      // Обновить элементы с data-lang-kk и data-lang-ru, если нужно
+      document.querySelectorAll('[data-lang-kk]').forEach(el => {
+        if (lang === 'kk') {
+          el.textContent = el.getAttribute('data-lang-kk');
+        } else {
+          el.textContent = el.getAttribute('data-lang-ru');
+        }
+      });
+    }
+  
+    // Установить язык по умолчанию при загрузке страницы
+    window.onload = () => setLanguage('kk');
+  </script>
+  
+
+</body>
+</html>
